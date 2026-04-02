@@ -24,18 +24,20 @@
     <title>Sudan Basnet</title>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- dark mode toggler -->
+    <!-- dark mode toggler -->
+    <input type="checkbox" id="darkmode" hidden />
 
+    <div class="wrapper">
+      <label for="darkmode"><i class="fa-solid fa-toggle-on"></i> </label>
       <!-- nav bar -->
       <header>
         <div class="header container flex">
           <div class="logo flex">
-            <div>Sudan</div>
+            <div>Sudan Basnet</div>
             <div class="line">Full stack Developer</div>
           </div>
           <div class="menu">
-            <ul>
+            <ul class="flex navigation">
               <li><a href="">Home</a></li>
               <li><a href="">Skills</a></li>
               <li><a href="">Projects</a></li>
@@ -46,7 +48,25 @@
         </div>
       </header>
       <!-- hero section -->
-
+      <section class="hero-section container">
+        <div class="grid hero">
+          <div class="left flex">
+            <div>Hi I'm <span>Sudan Basnet</span></div>
+            <div class="tag">Full Stack Developer</div>
+            <p>3 years in the Tech industry and still learning</p>
+            <div>
+              <a href="./assets/Sudan Basnet (DSS).pdf">
+                <button>
+                  Download CV <i class="fa-solid fa-download"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="right flex">
+            <img src="./assets/sudan.png" alt="Sudan file" />
+          </div>
+        </div>
+      </section>
       <!-- banner section-->
 
       <!-- skills section-->

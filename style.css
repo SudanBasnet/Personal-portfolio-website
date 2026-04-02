@@ -1,8 +1,11 @@
 :root {
-  --color-orange: orangered;
+  --color-orange: rgb(177, 38, 16);
   --color-dark: #2a2a2a;
   --body-bg: rgb(174, 209, 172);
   --text-color: var(--color-dark);
+  --dark-bg: var(--color-dark);
+  --dark-text-color: white;
+  --box-shadow: 4px -2px 40px 9px rgba(87, 87, 87, 0.828);
 }
 
 html {
@@ -20,6 +23,7 @@ body {
 .container {
   width: 80%;
   margin: auto;
+  max width: 1400px;
 }
 
 .flex {
@@ -57,10 +61,20 @@ a {
 }
 
 /* <!-- dark mode toggler --> */
-
+[for="darkmode"] {
+  position: fixed;
+  top: 7rem;
+  left: 3rem;
+  font-size: 1.3rem;
+}
+[for="darkmode"]:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: all 0.3s;
+}
 /* <!-- nav bar --> */
 header {
-  box-shadow: 4px -2px 40px 9px rgba(51, 64, 5, 0.425);
+  box-shadow: var(--box-shadow);
   position: static;
   top: 0;
   background: var(--body-bg);
@@ -73,6 +87,7 @@ header .header {
 
 .logo {
   font-size: 1.3rem;
+  position: relative;
 }
 
 .logo :first-child {
@@ -87,14 +102,74 @@ header .header {
 
 .line::before {
   content: "";
-  background: var(--color-orange);
+  background: black;
   width: 4px;
   height: 100%;
   position: absolute;
-  left: 30%;
+  left: 45%;
+}
+
+.navigation {
+  list-style: none;
+  font-weight: bold;
+}
+.navigation li:hover {
+  color: var(--color-orange);
+}
+
+/* applying dark mode feature */
+#darkmode:checked + .wrapper {
+  --body-bg: var(--dark-bg);
+  color: var(--dark-text-color);
 }
 
 /* <!-- hero section --> */
+
+.hero-section {
+  margin-top: 5rem;
+  max-height: 60vh;
+}
+
+.hero {
+  background-color: aqua;
+  grid-template-areas: "left right";
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.left {
+  grid-area: left;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10vw;
+}
+.left div span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.left .tag {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+.left button {
+  background: var(--color-dark);
+  color: var(--dark-text-color);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.right {
+  grid-area: right;
+  justify-content: flex-end;
+  align-items: left;
+  margin-top: -7rem;
+}
+.right img {
+  height: 115%;
+}
 
 /* <!-- banner section--> */
 
