@@ -1,0 +1,108 @@
+:root {
+  --color-orange: orangered;
+  --color-dark: #2a2a2a;
+  --body-bg: rgb(174, 209, 172);
+  --text-color: var(--color-dark);
+}
+
+html {
+  /* scroll behaviour: smooth; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem; /* 1rem=16px */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .bricolage-grotesque {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+} */
+
+.wrapper {
+  background: var(--body-bg);
+  min-height: 100vh;
+}
+
+/* <!-- dark mode toggler --> */
+
+/* <!-- nav bar --> */
+header {
+  box-shadow: 4px -2px 40px 9px rgba(51, 64, 5, 0.425);
+  position: static;
+  top: 0;
+  background: var(--body-bg);
+}
+header .header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+.logo :first-child {
+  font-weight: bold;
+  margin-right: 1rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.line::before {
+  content: "";
+  background: var(--color-orange);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 30%;
+}
+
+/* <!-- hero section --> */
+
+/* <!-- banner section--> */
+
+/* <!-- skills section--> */
+
+/* <!-- projectssection --> */
+
+/* <!-- about section--> */
+
+/* <!-- contact section--> */
+/* <!-- footer section--> */
