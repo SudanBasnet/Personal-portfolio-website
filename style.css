@@ -456,7 +456,7 @@ footer .top ul li {
   #hamburgermenu:checked + .menu {
     /* left: calc(100% - 250px); slide in */
     transform: translateX(0);
-    /* background: rgba(174, 209, 172, 0.59); */
+    /* no commitments here */
   }
 
   /* hero */
@@ -477,7 +477,7 @@ footer .top ul li {
   .banner {
     flex-direction: column;
     margin-top: 400px;
-    /* padding-top: 10vh; */
+
     align-items: flex-start;
   }
   .info-divider {
