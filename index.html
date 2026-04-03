@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <!-- google fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,19 +40,22 @@
             <div>Sudan Basnet</div>
             <div class="line">Full stack Developer</div>
           </div>
+          <label for="hamburgermenu"><i class="fa-solid fa-bars"></i></label>
+          <input type="checkbox" id="hamburgermenu" />
+
           <div class="menu">
             <ul class="flex navigation">
-              <li><a href="">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contacts">Contact</a></li>
             </ul>
           </div>
         </div>
       </header>
       <!-- hero section -->
-      <section class="hero-section container">
+      <section class="hero-section container" id="hero">
         <div class="grid hero">
           <div class="left flex">
             <div>Hi I'm <span>Sudan Basnet</span></div>
@@ -69,14 +76,236 @@
       </section>
       <!-- banner section-->
 
+      <section class="flex banner container">
+        <div class="flex info-content">
+          <div class="flex-center icon-container">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span>Masters</span>
+            <p>Software Engineering</p>
+          </div>
+        </div>
+        <div class="info-divider"></div>
+        <div class="flex info-content">
+          <div class="flex-center icon-container">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span>5+ Projects</span>
+            <p>Completed</p>
+          </div>
+        </div>
+        <div class="info-divider"></div>
+        <div class="flex info-content">
+          <div class="flex-center icon-container">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span>3+ years</span>
+            <p>Experience in Tech</p>
+          </div>
+        </div>
+      </section>
+
       <!-- skills section-->
+      <div class="skills" id="skills">
+        <h2 class="title">
+          <span>Skills</span>
+        </h2>
+        <div class="container flex skills-container">
+          <div>
+            <i class="fa-brands fa-html5" style="color: rgb(198, 135, 17)"></i>
+            <span>HTML</span>
+          </div>
+          <div>
+            <i
+              class="fa-brands fa-css3-alt"
+              style="color: rgb(47, 39, 203)"
+            ></i>
+            <span>CSS</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-js" style="color: rgb(203, 190, 9)"></i>
+            <span>JavaScript</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <span>Github</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-react" style="color: rgb(33, 140, 183)"></i>
+            <span>React</span>
+          </div>
+          <div>
+            <i class="devicon-azure-plain" style="color: #007fff"></i>
+            <span>Azure</span>
+          </div>
+          <div>
+            <i class="devicon-windows8-original" style="color: #007fff"></i>
+            <span>Windows 11</span>
+          </div>
+        </div>
+      </div>
 
-      <!-- projectssection -->
+      <!-- projects section -->
+      <section class="grid projects container" id="projects">
+        <h2 class="title"><span>My projects</span></h2>
 
-      <!-- about section-->
+        <div class="grid project-container">
+          <div class="project-card">
+            <div class="top">
+              <img src="./assets/project1.png" alt="" width="100%" />
+            </div>
+            <div class="bottom container">
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>techstack: Html, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img src="./assets/project1.png" alt="" width="100%" />
+            </div>
+            <div class="bottom container">
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>techstack: Html, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img src="./assets/project1.png" alt="" width="100%" />
+            </div>
+            <div class="bottom container">
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>techstack: Html, CSS, JavaScript</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="top">
+              <img src="./assets/project1.png" alt="" width="100%" />
+            </div>
+            <div class="bottom container">
+              <div class="links">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-chrome"></i></a>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>techstack: Html, CSS, JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- about Me section-->
+      <section class="about" id="about">
+        <h2 class="title">
+          <span>About Me</span>
+        </h2>
+
+        <div class="container about-content">
+          <div class="myimg">
+            <img src="./assets/sudan.png" alt="Sudan Basnet" />
+          </div>
+
+          <div class="my-bio">
+            <h2>Sudan Basnet</h2>
+
+            <p>
+              I am an IT Support Engineer based in Sydney with experience in
+              desktop support and enterprise IT environments. I have worked with
+              Microsoft 365, Active Directory, and Intune, handling user issues
+              across hardware, software, and networking.
+            </p>
+
+            <p>
+              Alongside this, I am learning full-stack development using the
+              MERN stack and building real-world projects. My goal is to
+              transition into a full-stack developer role.
+            </p>
+
+            <p>Sydney, Australia</p>
+
+            <div class="interest">
+              <div class="tag">Interests</div>
+
+              <div class="interest-list">
+                <span>Coding</span>
+                <span>Sketching</span>
+                <span>User Assistance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- contact section-->
+      <section class="contact container" id="contacts">
+        <h2 class="title">
+          <span>Contact</span>
+        </h2>
+        <div class="flex social">
+          <a
+            href="https://www.linkedin.com/in/sudan-basnet/?trk=public-profile-join-page"
+            target="_blank"
+            ><i class="fa-brands fa-square-linkedin"></i
+          ></a>
+          <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="" target="_blank"><i class="fa-solid fa-mobile"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <h3>OR</h3>
+        <div class="flex-center">
+          <a href="" class="email-section flex-center">
+            <span>sdnbasnet5@gmail.com</span>
+            <div class="email-icon flex-center">
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </a>
+        </div>
+      </section>
+
       <!-- footer section-->
+      <footer class="flex-center">
+        <div class="top flex">
+          <div class="links">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#skills">skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="socials">
+            <h3>Socials</h3>
+            <ul>
+              <li><a href="">linkedin</a></li>
+              <li><a href=""></a>Github</li>
+              <li><a href=""></a>Facebook</li>
+              <li><a href=""></a>Youtube</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottom">
+          &copy; copyrights all reserved 2026 | Made by Sudan
+        </div>
+      </footer>
+      <a href="#hero"
+        ><div class="go-up flex-center">
+          <i class="fa-solid fa-angle-up"></i></div
+      ></a>
     </div>
   </body>
 </html>
